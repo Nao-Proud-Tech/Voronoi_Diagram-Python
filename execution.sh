@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Setting command line arguments
-DATA_NUM=5000
+DATA_NUM=1800
 IMG_W=512
 IMG_H=512
 LINE_TYPE=8
@@ -15,3 +15,4 @@ python3 make_img.py \
     --width ${IMG_W} \
     --type ${LINE_TYPE} \
     --cmap ${C_MAP} \
+    --point \

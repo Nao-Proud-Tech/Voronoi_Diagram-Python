@@ -85,7 +85,9 @@ def main():
     # loop
     for i in range(args.data_num):
         # Random Point Generation
-        pts = getRandom2DPoints(args.width, args.height, 30)
+        point_num = 30
+        rand_point_num = random.randint(2,point_num)
+        pts = getRandom2DPoints(args.width, args.height, rand_point_num)
         imgv = np.zeros((args.height, args.width, 3), np.uint8)
         imgv.fill(255)
 
